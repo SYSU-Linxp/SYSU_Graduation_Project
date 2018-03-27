@@ -17,6 +17,6 @@ You can install all of the setting with pip.
   ...                                
   0749_c5_f7528193.jpg     750   
   ...                           
-  So as to the "test.list" and "query.list", which are for probe and query
+  So as to the "test.list" and "query.list", which are for probe and query    
 3.Train the base model(ResNet-50) on the dataset A, such as DukeMTMC, and move the trained model the 'Model' file.    
 4.Let B as the target dataset,such as Market1501, and modify A->B in Model/unsupervised.py.
