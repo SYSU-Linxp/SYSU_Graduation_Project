@@ -1,0 +1,93 @@
+nohup: ignoring input
+Using TensorFlow backend.
+2018-03-22 23:19:25.244953: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-22 23:19:25.244995: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-22 23:19:25.245006: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-22 23:19:26.068896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:05:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-03-22 23:19:26.068981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-03-22 23:19:26.069002: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-03-22 23:19:26.069026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0)
+evaluate.py:75: UserWarning: Update your `Model` call to the Keras 2 API: `Model(outputs=Tensor("av..., inputs=Tensor("in...)`
+  net = Model(input=net.input, output=net.get_layer('avg_pool').output)
+checkpoint/1.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.052857	5: 0.130714	10: 0.177143	20: 0.235714	mAP: 0.057376
+
+checkpoint/2.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.064286	5: 0.133571	10: 0.181429	20: 0.240000	mAP: 0.063665
+
+checkpoint/3.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.068571	5: 0.136429	10: 0.179286	20: 0.251429	mAP: 0.067325
+
+checkpoint/4.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.064286	5: 0.137143	10: 0.186429	20: 0.247857	mAP: 0.069006
+
+checkpoint/5.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.072857	5: 0.135714	10: 0.182143	20: 0.247857	mAP: 0.069521
+
+checkpoint/6.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.067143	5: 0.141429	10: 0.182143	20: 0.248571	mAP: 0.068501
+
+checkpoint/7.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070714	5: 0.135714	10: 0.181429	20: 0.244286	mAP: 0.072155
+
+checkpoint/8.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.060714	5: 0.133571	10: 0.180000	20: 0.243571	mAP: 0.065949
+
+checkpoint/9.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.067857	5: 0.137143	10: 0.182143	20: 0.240714	mAP: 0.069093
+
+checkpoint/10.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.062143	5: 0.135000	10: 0.185714	20: 0.251429	mAP: 0.067839
+
+checkpoint/11.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070000	5: 0.142857	10: 0.182143	20: 0.242143	mAP: 0.073861
+
+checkpoint/12.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.062143	5: 0.135000	10: 0.184286	20: 0.253571	mAP: 0.068747
+
+checkpoint/13.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070000	5: 0.137857	10: 0.181429	20: 0.242143	mAP: 0.070250
+
+checkpoint/14.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070714	5: 0.137143	10: 0.180000	20: 0.243571	mAP: 0.068477
+
+checkpoint/15.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070000	5: 0.137857	10: 0.187143	20: 0.247857	mAP: 0.070559
+
+checkpoint/16.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.066429	5: 0.140000	10: 0.185000	20: 0.242857	mAP: 0.068701
+
+checkpoint/17.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070714	5: 0.131429	10: 0.189286	20: 0.244286	mAP: 0.069575
+
+checkpoint/18.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.068571	5: 0.137857	10: 0.191429	20: 0.252143	mAP: 0.070244
+
+checkpoint/19.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.066429	5: 0.131429	10: 0.177857	20: 0.250000	mAP: 0.067812
+
+checkpoint/20.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.065000	5: 0.132143	10: 0.173571	20: 0.235714	mAP: 0.068247
+
+checkpoint/21.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.074286	5: 0.145714	10: 0.193571	20: 0.249286	mAP: 0.073979
+
+checkpoint/22.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.065000	5: 0.140000	10: 0.189286	20: 0.255000	mAP: 0.069337
+
+checkpoint/23.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.062857	5: 0.125000	10: 0.176429	20: 0.246429	mAP: 0.062931
+
+checkpoint/24.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.067857	5: 0.127857	10: 0.177143	20: 0.242143	mAP: 0.066120
+
+checkpoint/25.ckpt - ../dataset/CUHK03/bbox_test
+1: 0.070714	5: 0.132143	10: 0.177857	20: 0.237143	mAP: 0.066194
+
+swig/python detected a memory leak of type 'int64_t *', no destructor found.
+swig/python detected a memory leak of type 'int64_t *', no destructor found.

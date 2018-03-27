@@ -1,0 +1,93 @@
+nohup: ignoring input
+Using TensorFlow backend.
+2018-03-18 12:54:15.973613: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-18 12:54:15.973656: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-18 12:54:15.973667: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-18 12:54:16.748963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:05:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-03-18 12:54:16.749025: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-03-18 12:54:16.749037: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-03-18 12:54:16.749052: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0)
+evaluate.py:75: UserWarning: Update your `Model` call to the Keras 2 API: `Model(outputs=Tensor("av..., inputs=Tensor("in...)`
+  net = Model(input=net.input, output=net.get_layer('avg_pool').output)
+checkpoint/1.ckpt - ../dataset/Market/bounding_box_test
+1: 0.369062	5: 0.546912	10: 0.625594	20: 0.701306	mAP: 0.152030
+
+checkpoint/2.ckpt - ../dataset/Market/bounding_box_test
+1: 0.407067	5: 0.575416	10: 0.641924	20: 0.713777	mAP: 0.174998
+
+checkpoint/3.ckpt - ../dataset/Market/bounding_box_test
+1: 0.405582	5: 0.560273	10: 0.629751	20: 0.703088	mAP: 0.172012
+
+checkpoint/4.ckpt - ../dataset/Market/bounding_box_test
+1: 0.432304	5: 0.583432	10: 0.652019	20: 0.721496	mAP: 0.186499
+
+checkpoint/5.ckpt - ../dataset/Market/bounding_box_test
+1: 0.420131	5: 0.576010	10: 0.645190	20: 0.711401	mAP: 0.183667
+
+checkpoint/6.ckpt - ../dataset/Market/bounding_box_test
+1: 0.431116	5: 0.588777	10: 0.652019	20: 0.717933	mAP: 0.188658
+
+checkpoint/7.ckpt - ../dataset/Market/bounding_box_test
+1: 0.434086	5: 0.588777	10: 0.653800	20: 0.720606	mAP: 0.192929
+
+checkpoint/8.ckpt - ../dataset/Market/bounding_box_test
+1: 0.429335	5: 0.593824	10: 0.655285	20: 0.725356	mAP: 0.193227
+
+checkpoint/9.ckpt - ../dataset/Market/bounding_box_test
+1: 0.423397	5: 0.576603	10: 0.657660	20: 0.722090	mAP: 0.188003
+
+checkpoint/10.ckpt - ../dataset/Market/bounding_box_test
+1: 0.435867	5: 0.593527	10: 0.661223	20: 0.719715	mAP: 0.195627
+
+checkpoint/11.ckpt - ../dataset/Market/bounding_box_test
+1: 0.436758	5: 0.604810	10: 0.665677	20: 0.729513	mAP: 0.198350
+
+checkpoint/12.ckpt - ../dataset/Market/bounding_box_test
+1: 0.437352	5: 0.593230	10: 0.659739	20: 0.721200	mAP: 0.195440
+
+checkpoint/13.ckpt - ../dataset/Market/bounding_box_test
+1: 0.432601	5: 0.598575	10: 0.670131	20: 0.728622	mAP: 0.194526
+
+checkpoint/14.ckpt - ../dataset/Market/bounding_box_test
+1: 0.426663	5: 0.586995	10: 0.650831	20: 0.719418	mAP: 0.189537
+
+checkpoint/15.ckpt - ../dataset/Market/bounding_box_test
+1: 0.430819	5: 0.600653	10: 0.662114	20: 0.721793	mAP: 0.191829
+
+checkpoint/16.ckpt - ../dataset/Market/bounding_box_test
+1: 0.439430	5: 0.604810	10: 0.669834	20: 0.732482	mAP: 0.192358
+
+checkpoint/17.ckpt - ../dataset/Market/bounding_box_test
+1: 0.435570	5: 0.592637	10: 0.657363	20: 0.724169	mAP: 0.195491
+
+checkpoint/18.ckpt - ../dataset/Market/bounding_box_test
+1: 0.439133	5: 0.599466	10: 0.666865	20: 0.730998	mAP: 0.203122
+
+checkpoint/19.ckpt - ../dataset/Market/bounding_box_test
+1: 0.446556	5: 0.607482	10: 0.673100	20: 0.734561	mAP: 0.200287
+
+checkpoint/20.ckpt - ../dataset/Market/bounding_box_test
+1: 0.456948	5: 0.609561	10: 0.676960	20: 0.737827	mAP: 0.206145
+
+checkpoint/21.ckpt - ../dataset/Market/bounding_box_test
+1: 0.453682	5: 0.604216	10: 0.674287	20: 0.736342	mAP: 0.203078
+
+checkpoint/22.ckpt - ../dataset/Market/bounding_box_test
+1: 0.450416	5: 0.612530	10: 0.679335	20: 0.741686	mAP: 0.207147
+
+checkpoint/23.ckpt - ../dataset/Market/bounding_box_test
+1: 0.447447	5: 0.611936	10: 0.675178	20: 0.739905	mAP: 0.205806
+
+checkpoint/24.ckpt - ../dataset/Market/bounding_box_test
+1: 0.440024	5: 0.605998	10: 0.666568	20: 0.727138	mAP: 0.201843
+
+checkpoint/25.ckpt - ../dataset/Market/bounding_box_test
+1: 0.453979	5: 0.620546	10: 0.682601	20: 0.737530	mAP: 0.208118
+
+swig/python detected a memory leak of type 'int64_t *', no destructor found.
+swig/python detected a memory leak of type 'int64_t *', no destructor found.

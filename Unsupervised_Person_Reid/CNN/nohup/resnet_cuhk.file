@@ -1,0 +1,22 @@
+nohup: ignoring input
+Using TensorFlow backend.
+2018-03-13 18:44:45.317618: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-13 18:44:45.317662: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-13 18:44:45.317673: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-13 18:44:46.122332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:05:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-03-13 18:44:46.122411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-03-13 18:44:46.122426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-03-13 18:44:46.122441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0)
+/home/linxp/.local/lib/python2.7/site-packages/keras/models.py:291: UserWarning: Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+  warnings.warn('Error in loading the saved optimizer '
+evaluate.py:75: UserWarning: Update your `Model` call to the Keras 2 API: `Model(outputs=Tensor("av..., inputs=Tensor("in...)`
+  net = Model(input=net.input, output=net.get_layer('avg_pool').output)
+Rank 1:	0.243571
+mAP:	0.226891
+swig/python detected a memory leak of type 'int64_t *', no destructor found.
+swig/python detected a memory leak of type 'int64_t *', no destructor found.

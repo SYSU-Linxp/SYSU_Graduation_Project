@@ -1,0 +1,82 @@
+nohup: ignoring input
+Using TensorFlow backend.
+2018-03-26 14:35:41.484201: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-26 14:35:41.484252: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-26 14:35:41.484263: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-03-26 14:35:42.250018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:05:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-03-26 14:35:42.250091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-03-26 14:35:42.250103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-03-26 14:35:42.250119: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:05:00.0)
+evaluate.py:75: UserWarning: Update your `Model` call to the Keras 2 API: `Model(outputs=Tensor("av..., inputs=Tensor("in...)`
+  net = Model(input=net.input, output=net.get_layer('avg_pool').output)
+checkpoint/1.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.165171	5: 0.281418	10: 0.334829	20: 0.402603	mAP: 0.076601
+
+checkpoint/2.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.162926	5: 0.266607	10: 0.328995	20: 0.380610	mAP: 0.076604
+
+checkpoint/3.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.177738	5: 0.286804	10: 0.346499	20: 0.402154	mAP: 0.087353
+
+checkpoint/4.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.197038	5: 0.306104	10: 0.359515	20: 0.413824	mAP: 0.099102
+
+checkpoint/5.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.185368	5: 0.290395	10: 0.337074	20: 0.395871	mAP: 0.091849
+
+checkpoint/6.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.202873	5: 0.312388	10: 0.358618	20: 0.412926	mAP: 0.101253
+
+checkpoint/7.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.197487	5: 0.308797	10: 0.349192	20: 0.410233	mAP: 0.102200
+
+checkpoint/8.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.196589	5: 0.296230	10: 0.351885	20: 0.409336	mAP: 0.100821
+
+checkpoint/9.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.201975	5: 0.296679	10: 0.354578	20: 0.414722	mAP: 0.102410
+
+checkpoint/10.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.208259	5: 0.311939	10: 0.362657	20: 0.421903	mAP: 0.103940
+
+checkpoint/11.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.202424	5: 0.317774	10: 0.368941	20: 0.417864	mAP: 0.102330
+
+checkpoint/12.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.200180	5: 0.311041	10: 0.360413	20: 0.416966	mAP: 0.102694
+
+checkpoint/13.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.212747	5: 0.320018	10: 0.379713	20: 0.431329	mAP: 0.110339
+
+checkpoint/14.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.201077	5: 0.312837	10: 0.364452	20: 0.417415	mAP: 0.104197
+
+checkpoint/15.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.213196	5: 0.315081	10: 0.362657	20: 0.416517	mAP: 0.103988
+
+checkpoint/16.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.199282	5: 0.301616	10: 0.349192	20: 0.399461	mAP: 0.100840
+
+checkpoint/17.ckpt - ../dataset/Duke/bounding_box_test
+1: 0.202424	5: 0.298474	10: 0.355027	20: 0.410233	mAP: 0.100536
+
+Traceback (most recent call last):
+  File "evaluate.py", line 139, in <module>
+    evaluate(duke, model)
+  File "evaluate.py", line 74, in evaluate
+    net = load_model(model)
+  File "/home/linxp/.local/lib/python2.7/site-packages/keras/models.py", line 237, in load_model
+    with h5py.File(filepath, mode='r') as f:
+  File "/usr/lib/python2.7/dist-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/usr/lib/python2.7/dist-packages/h5py/_hl/files.py", line 79, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDONLY, fapl=fapl)
+  File "h5f.pyx", line 71, in h5py.h5f.open (h5py/h5f.c:1806)
+IOError: unable to open file (File accessibilty: Unable to open file)
+swig/python detected a memory leak of type 'int64_t *', no destructor found.
+swig/python detected a memory leak of type 'int64_t *', no destructor found.
