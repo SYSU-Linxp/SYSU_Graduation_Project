@@ -1,11 +1,14 @@
 # SYSU_Graduation_Project
 This is my graduation project about unsupervised person re-id
 
+## Algorithm Flow
+![image](https://github.com/SYSU-Linxp/SYSU_Graduation_Project/tree/master/Unsupervised_Person_Reid/pineline.png)
+
 ## CNN
 The CNN file is the baseline of the model, I finally select ResNet-50 as the base model to extract the features.
 
 ## Setup
-All of the code is implemented with Keras, Tensorflow(Python).
+All of the code is implemented with Keras, Tensorflow(Python).  
 You can install all of the setting with pip.
 
 ## How to run
