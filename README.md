@@ -1,7 +1,7 @@
 # SYSU_Graduation_Project
 This is my graduation project about unsupervised person re-id
 
-![image](./Unsupervised_Person_Reid/pineline.png)
+![image](./Unsupervised_Person_Reid/Image/pineline.png)
 
 ## CNN
 The CNN file is the baseline of the model, I finally select ResNet-50 as the base model to extract the features.
